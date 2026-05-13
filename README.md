@@ -2,77 +2,93 @@
 
 A full-stack Vehicle Management System built with Django, React, and PostgreSQL.
 
-The platform is designed to manage vehicle records, citizen vehicle registration, institutional approval workflows, obligations, payments, notifications, and vehicle-related documents.
+This project simulates a digital platform for vehicle registration, citizen vehicle management, institutional approval workflows, obligations, payments, notifications, and document tracking.
 
-## Project Overview
+The system is designed as a modern GovTech-style platform focused on vehicle lifecycle management.
 
-This project simulates a digital vehicle management platform where citizens can register vehicles, view vehicle-related obligations, receive notifications, and track payments, while institution users can approve or reject vehicle registrations and monitor system data.
+# Features
 
-The system is intended as a foundation for a larger GovTech-style vehicle lifecycle management platform.
+## Authentication & Users
+- JWT Authentication
+- Citizen registration and login
+- Institution/Admin login
+- Role-based access
 
-## Technologies Used
+## Citizen Portal
+- Register vehicles
+- Track vehicle approval status
+- View registered vehicles
+- Vehicle dashboard
+- Vehicle-related obligations
+- Payment tracking
+- Notifications
+- PDF payment receipts
 
-### Backend
+## Institution Portal
+- Institution dashboard
+- Pending vehicle approvals
+- Approve/reject vehicles
+- Vehicle monitoring
+- Obligation monitoring
+- Payment monitoring
+
+## Vehicle Management
+- Plate number
+- VIN / chassis number
+- Vehicle make/model/year
+- Vehicle status tracking
+- Insurance expiry
+- Inspection expiry
+- Circulation permit expiry
+- Road tax expiry
+
+## Obligations & Payments
+- Automatic obligation creation
+- Payment processing simulation
+- Payment history
+- Receipt generation
+- Obligation status management
+
+## Notifications
+- Vehicle approval notifications
+- Payment notifications
+- Due-date reminders
+- Read/unread tracking
+
+# Tech Stack
+
+## Backend
 - Python
 - Django
 - Django REST Framework
 - PostgreSQL
 - JWT Authentication
 
-### Frontend
+## Frontend
 - React
 - React Router
 - Axios
 - JavaScript
-- CSS inline styling
 
-### Database
+## Database
 - PostgreSQL
 
-## Main Features
+# Project Structure
 
-### Citizen Portal
-- Citizen registration and login
-- Vehicle registration
-- Vehicle approval status tracking
-- Personal vehicle dashboard
-- Vehicle expiry dates
-- Obligation tracking
-- Payment history
-- Notifications
-- Receipt download
-
-### Institution/Admin Portal
-- Institution dashboard
-- Vehicle approval workflow
-- Pending vehicle approvals
-- Approve/reject vehicle registrations
-- Overview of vehicles and obligations
-- Payment and notification monitoring
-
-### Vehicle Records
-- Plate number
-- VIN / chassis number
-- Make, model, year, color
-- Vehicle status
-- Insurance expiry
-- Inspection expiry
-- Circulation permit expiry
-- Road tax expiry
-
-### Obligations & Payments
-- Automatic obligation creation
-- Payment tracking
-- Payment status
-- PDF receipt generation
-- Payment history per user
-
-### Notifications
-- Due-date reminders
-- Payment notifications
-- Vehicle approval notifications
-- Read/unread notification status
-
-## Screenshots
-
-
+vehicle-management-system/
+│
+├── backend/
+│   ├── apps/
+│   ├── core/
+│   ├── vehicle_system/
+│   └── manage.py
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── screenshots/
+│
+├── README.md
+└── .gitignore
