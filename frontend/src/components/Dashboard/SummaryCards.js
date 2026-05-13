@@ -1,0 +1,1 @@
+import React from "react"; export default function SummaryCards({ stats }) { return <div className="grid">{stats.map((item)=><div className="card" key={item.label}><h3>{item.label}</h3><p style={{fontSize:"28px",fontWeight:"bold"}}>{item.value}</p></div>)}</div>; }

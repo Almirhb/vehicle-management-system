@@ -1,0 +1,1 @@
+import React from "react"; export default function NotificationsList({ items=[] }) { return <div className="card"><h2>Notifications</h2>{items.map(n=><div key={n.id} style={{padding:"10px 0",borderBottom:"1px solid #eee"}}><strong>{n.title}</strong><div>{n.message}</div><small>{n.category} | {n.is_read ? "read" : "unread"}</small></div>)}</div>; }
